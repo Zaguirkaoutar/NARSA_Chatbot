@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# NARSA Intelligent Chatbot
+# NARSA Intelligent Chatbot (NARSA_Chatbot)
 
 Squelette de projet inspiré de Cookiecutter Data Science et adapté au CPS N°29/NARSA/2026.
 
@@ -32,6 +31,9 @@ Puis ouvrir http://127.0.0.1:8000/docs
 - `reports/`: résultats et analyses.
 
 **Important :** ce dossier est un squelette de démarrage, pas un chatbot terminé. Les réponses doivent être vérifiées à partir de sources officielles NARSA. Ne pas ajouter de données personnelles réelles. Les intégrations, modèles NLP, STT/TTS et mécanismes de sécurité restent à développer et valider.
-=======
-# NARSA_Chatbot
->>>>>>> a5b549d59161981e9eaf6066e6ca50b816e40a76
+
+## Organisation de l'équipe
+- **Nawal (Frontend React)** : `frontend/` — interface conversationnelle, affichage des messages, FAQ interactive et feedback utilisateur.
+- **Hajar (IA & NLP)** : `src/narsa_chatbot/ai/`, `src/narsa_chatbot/nlp/`, `src/narsa_chatbot/knowledge_base/` — prétraitement, détection de langue, classification d'intentions, extraction d'entités, sélection de réponses et évaluation.
+- **Kawtar (Backend FastAPI)** : `src/narsa_chatbot/api/`, `src/narsa_chatbot/services/`, `src/narsa_chatbot/db/`, `src/narsa_chatbot/security/` — API FastAPI, routes, base de données, services backend et intégration du module IA.
+- **Données communes** : `data/faq/` et `data/dataset/`.
